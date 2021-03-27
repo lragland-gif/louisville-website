@@ -5,106 +5,128 @@ h1 {
  font-style: oblique;
 }
 
-  p {
-  color: olive;
+h2 {
+  color: rgb(55, 56, 55);
   text-align: center;
-  font-size: larger;
+  font-size: medium;
   font-style: oblique;
 
 }
-* {
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-}
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left; 
-  padding: 10px;
-}
-
-/* Left and right column */
-.column.side {
-  width: 25%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 25%;
-  -ms-flex-align: center;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Container flex boxes */
-.container-1{
+ /* Parent Styling */
+.flexParent {
   display: flex;
+  gap: 5px;
+  border:white;
   }
 
-  .container-1 div{
-    border: 1px #ccc solid;
-    padding: 10px;
-    border: hidden;
-    }
-
-    .box-1{
-      flex:1;
-    }
-
-    .box-2{
-      flex:1;
-      }
-    .box-3{
-        flex:1;
-      }
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
+/* Child Styling */
+.flexChild {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  /*   justify-content: center; */
+  /*   align-items: center; */
+  /*   flex: 1; */
+  /*   flex: 0 1 300px; */
+  /*   align-self: flex-end; */
+}
+/*   align-self: center; */
+.flexChild1 {
+  align-self:auto;
 }
 
-/* Style the footer */
-  .footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
+.flexChild3 {
+  align-self: flex-start;
+
+  /*   order: -1; // Default is zero */
+  /*   flex-grow: 2; */
+  /*   flex-shrink: 3; */
+  /*   flex-basis: 300px; */
+  /*   align-self: flex-end; */
+}
+
+/* Header Styling */
+header {
+  justify-content: space-between;
+}
+
+header .nav {
+  display: flex;
+  flex: 1;
+  /*   flex: auto; */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+/* Card Styling */
+.flexChild.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(88, 87, 87);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  height: auto;
+  color: rgb(225, 225, 225);
+}
+
+/* Global Styling */
+.flexParent {
+  background-color: rgb(172, 147, 147);
+  padding: 20px;
+  min-height: 350px;
+  margin-bottom: 20px;
+  color:ghostwhite;
+}
+.flexChild {
+  color: white;
+  padding: 20px;
+  background:rgb(88, 87, 87)  
+  
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.flex--wrap {
+  flex-wrap: wrap;
+}
+ul {
+  list-style: l;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  scroll-margin-right:30px;
+  word-spacing:20px;
+}
+ul a {
+  color: rgb(236, 222, 222); 
+  
+  
+}
+
+@media (min-width: 600px) {
+
+p { 
+font-size: 1.25rem; 
+ }    
+}
+@media (min-width: 800px) {
+  p {font-size: 1.5rem;
+  line-height: 1.5;
+ }
+}
+/* mobile first */
+@media (min-width: 600px) {
+}
+
+
+/* desktop first */
+@media (max-width: 600px) {
+
+}
