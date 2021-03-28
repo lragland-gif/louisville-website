@@ -15,7 +15,8 @@ h2 {
 
  /* Parent Styling */
  .flexParent {
-  display: flex;
+  display: flex; 
+  flex-wrap: wrap; 
   gap: 8px;
   border:white;
   }
@@ -28,6 +29,7 @@ header {
 
 header .nav {
   display: flex;
+  flex-wrap: wrap-reverse;
   flex: 1;
   /*   flex: auto; */
   justify-content: flex-end;
