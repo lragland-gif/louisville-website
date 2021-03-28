@@ -13,39 +13,13 @@ h2 {
 
 }
 
-
  /* Parent Styling */
-.flexParent {
+ .flexParent {
   display: flex;
-  gap: 5px;
+  gap: 8px;
   border:white;
   }
 
-/* Child Styling */
-.flexChild {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  /*   justify-content: center; */
-  /*   align-items: center; */
-  /*   flex: 1; */
-  /*   flex: 0 1 300px; */
-  /*   align-self: flex-end; */
-}
-/*   align-self: center; */
-.flexChild1 {
-  align-self:auto;
-}
-
-.flexChild3 {
-  align-self: flex-start;
-
-  /*   order: -1; // Default is zero */
-  /*   flex-grow: 2; */
-  /*   flex-shrink: 3; */
-  /*   flex-basis: 300px; */
-  /*   align-self: flex-end; */
-}
 
 /* Header Styling */
 header {
@@ -62,31 +36,32 @@ header .nav {
 
 
 /* Card Styling */
-.flexChild.card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(88, 87, 87);
-  padding: 20px;
-  width: 300px;
-  text-align: left;
-  height: auto;
-  color: rgb(225, 225, 225);
-}
+  .flexChild.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(136, 132, 132);
+     padding: 20px;
+     width: 200px;
+     text-align: left;
+     height: auto;
+    color: rgb(225, 225, 225);
+  }
 
 /* Global Styling */
 .flexParent {
   background-color: rgb(172, 147, 147);
   padding: 20px;
-  min-height: 350px;
+  min-height: 200px;
   margin-bottom: 20px;
-  color:ghostwhite;
+  color:rgb(241, 236, 236)(186, 186, 238);
+ 
 }
 .flexChild {
-  color: white;
+  color: rgb(228, 220, 220);
   padding: 20px;
-  background:rgb(88, 87, 87)  
+  background:rgb(78, 41, 41)  
   
 }
 body {
@@ -105,11 +80,41 @@ ul li {
   word-spacing:20px;
 }
 ul a {
-  color: rgb(236, 222, 222); 
-  
-  
+  color: rgb(22, 19, 19); 
+ 
+ }
+
+.flexbox-container {
+  display: flex;
+  width: 100px;
+  height: 200px;
+  border: 3px; 
+     
 }
 
+.flexbox-item {
+    min-width: 100px;
+}
+
+.flexbox-item-1 {
+   min-height: 100px;
+  }
+
+.flexbox-item-2 {
+    min-height: 100px;
+   }
+
+.flexbox-item-3 {
+     min-height: 100px;
+   }
+   .flexbox-item-4 {
+    min-height: 100px;
+  }
+
+
+footer {
+  font-size: smaller;
+}
 @media (min-width: 600px) {
 
 p { 
