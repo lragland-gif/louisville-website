@@ -67,7 +67,13 @@
     the city is known as the home of boxer Muhammad Ali, the Kentucky Derby, KFC (Kentucky Fried Chicken), the
     University of Louisville and its Cardinals, Louisville Slugger baseball bats, and three of Kentucky's six Fortune
     500 companies: Humana, Kindred Healthcare, and Yum! Brands.[13][14] Muhammad Ali International Airport, Louisville's
-    main commercial airport, hosts UPS's worldwide hub. </h2>
+    main commercial airport, hosts UPS's worldwide hub.
+    The Louisville Zoo has been open since 1969 and exhibits more than 1,100 animals on 130 acres of natural settings. 
+    Historic Old Louisville offers alot to see from the St. James Court ARt Show to the Kentucky Shakespeare festival in Centeral Park.
+    The gateway to Old Louisville is the Historic Old Louisville Visitors Center in Central Park. You can even try a guilded walking tour.
+
+
+</h2>
 
 
   <button class="tablink" onclick="openPage('Packet', this, 'red')">Packet</button>
@@ -78,7 +84,26 @@
   <div id="Packet" class="tabcontent">
     <h3>Request a Packet by clicking the link and fill out the info below: </h3>
     <p>Planning a trip a welcome packet would be great!</p>
+
+      <form action="" method="get" class="form-packet">
+         <div class="form-packet">
+          <label for="name">Enter your name: </label>
+           <input type="text" name="name" id="name" required>
+          </div>
+           <div class="form-packet">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required>
+         </div>
+         <div class="form-packet">
+           <input type="submit" value="submit">
+          </div>
+     </form>
+  
+
+
   </div>
+
+
 
   <div id="News" class="tabcontent">
     <h3>News</h3>
@@ -110,24 +135,19 @@
     <h3>Downtown Maps</h3>
     <p>Where you want to go.</p>
     <img src="images/map.jpg" alt="map">
-
-
   </div>
 
+  <center><p class="p-welcome">If you have questions feel free to contact us.</p></center>
+ <center><a href="contact.html">Contact Us</a></center> 
+  <center></dcenter><footer>created 03/30/2021 Larissa Ragland</footer></center>
 
+ 
 
-
-
-  <p class="p-welcome">If you have questions feel free to contact us.</p>
-
-
-  <a href="contact.html">Contact Us</a>
-
-
-
-
-  <footer>March 28, 2021 Larissa Ragland</footer>
-
+  <p id="update"></p>
+ <script>
+    var d = new Date();
+    document.getElementById("update").innerHTML = d;
+ </script>
 
 </body>
 
