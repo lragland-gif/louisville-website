@@ -51,18 +51,10 @@ header .nav {
     color: rgb(225, 225, 225);
   }
 
-/* Global Styling */
-.flexParent {
-  background-color: rgb(172, 147, 147);
-  padding: 20px;
-  min-height: 200px;
-  margin-bottom: 20px;
-  color:rgb(241, 236, 236)(186, 186, 238);
- 
-}
+
 .flexChild {
   color: rgb(228, 220, 220);
-  padding: 20px;
+  padding: 20px; width: 150px;
   background:rgb(78, 41, 41)  
   
 }
@@ -88,11 +80,20 @@ ul a {
 
 .flexbox-container {
   display: flex;
-  width: 100px;
   height: 200px;
-  border: 3px; 
-     
+  -ms-flex-align: center;
+  padding: 10px;
+  border: 6px; 
+  
 }
+
+.flexbox-container img {
+height: 100%;
+}
+.img {
+  height: auto;
+}
+
 
 .flexbox-item {
     min-width: 100px;
@@ -112,28 +113,60 @@ ul a {
    .flexbox-item-4 {
     min-height: 100px;
   }
+  * {box-sizing: border-box}
+
+  
+   body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    }
+  
+  /* Style tab links */
+    .tablink {
+     background-color: #555;
+     color: white;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     font-size: 15px;
+     width: 25%;
+   }
+  
+   .tablink:hover {
+     background-color: #777;
+   }
+  
+  
+   .tabcontent {
+     color: white;
+     display: none;
+     padding: 100px 20px;
+     height: 100%;
+  }
+  
+  #Packet {background-color: red;}
+  #News {background-color: green;}
+  #Attractions {background-color: blue;}
+  #Maps {background-color: orange;}
 
 
 footer {
   font-size: smaller;
 }
-@media (min-width: 600px) {
 
-p { 
-font-size: 1.25rem; 
- }    
-}
-@media (min-width: 800px) {
-  p {font-size: 1.5rem;
-  line-height: 1.5;
- }
-}
-/* mobile first */
-@media (min-width: 600px) {
+@media (max-width: 767px) {
+  .classname {
+    width: 80%;
+  }
 }
 
-
-/* desktop first */
-@media (max-width: 600px) {
-
+@media (max-width: 480px) {
+  .classname {
+    width:100%;
+  }
 }
+
+ 
