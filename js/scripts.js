@@ -33,6 +33,13 @@ function openPage(pageName, elmnt, color) {
       if (checkbox.checked) {
            hiddeninputs[t].style.display = "block";
        }
+     else {
+      hiddeninputs[t].style.display = "none";
+
      }
+     }
+
+
+
   }
  

@@ -7,7 +7,7 @@ h1 {
 
 h2 {
   color: rgb(54, 59, 54);
-  text-align: wrap;
+  text-align:center;
   font-size: medium; 
   font-style: oblique;
 
@@ -33,7 +33,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color:rgb(136, 132, 132);
+  background-color:rgb(243, 237, 237);
    padding: 20px;
    width: 100px;
    text-align: left;
@@ -42,42 +42,9 @@ header {
 }
 
 
-.flexbox-container {
-  display: flex;
-  height: 150px; -ms-grid-row-align: stretch;
-  padding:20px;
-  border: 6px; 
-  }
-
-.flexbox-container img {
-height: 100%;
-border-width: 10px;
-padding-block: 10px;
-}
-
-.flexbox-item {
-    min-width:50%;
-}
-
-.flexbox-item-1 {
-   min-height: 75px;
-  }
-
-.flexbox-item-2 {
-    min-height: 75px;
-   }
-
-.flexbox-item-3 {
-     min-height: 75px;
-   }
-   .flexbox-item-4 {
-    min-height: 75px;
-  }
-  * 
-
   
    body, html {
-    height:75%;
+    height: 100%;
     margin: 0;
     font-family: Arial;
     }
@@ -99,10 +66,9 @@ padding-block: 10px;
 /* Style Flex-grid */
    .grid-container {
     display:table-row-group;
-
     height: 60vh;
-     border: 15px; 
-     padding: 10px;
+    border: 15px; 
+    padding: 10px;
      
         }
 
@@ -136,8 +102,8 @@ var {
 }
 
   .hidden {
-  display: none;
-
+    display: none;
+    
   }
 
 
@@ -155,19 +121,25 @@ footer {
   .classname {
     width: 80%;
   }
+  p:nth-child(even) {
+    background: rgb(177, 182, 190);
+  }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 992px) {
   .classname {
     width:100%;
   }
-}
-@media (min-width:
-  .flexChild {
-    max-width: 50%;
+   
 
-
+   .flexChild {
+     max-width: 50%;
+     flex-direction: row;
   }
-)
+  p:nth-child(3) {
+    background: rgb(136, 115, 115);
+  }
+}
+
 
  
