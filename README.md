@@ -1,7 +1,7 @@
 # louisville-website
 Poject website name:  Louisville-Website.  Titled "The Ville". 
 
-This is informational site for visitors coming to Louisville Kentucky. It gives you attractions to try as well as resturants  as well as where to go for wine/bourbon tastings. 
+This is a travel informational site for visitors coming to Louisville Kentucky. It gives you attractions to try as well as resturants  as well as where to go for wine/bourbon tastings. 
 It shows you a map for downtown louisville as well.  I provide a selection bar with tabs that allow you to navagate to other sites and also allows you to request a "packet" be emailed to you.   
     
     The three features I have included for my requirements are :

@@ -22,9 +22,11 @@ header {
 /* Parent Styling */
 .flexParent {
   display: flex; 
+  width:100%;
   flex-wrap:wrap-reverse;
    gap: 8px;
   border:white;
+  padding: 20px;
   }
   
 
