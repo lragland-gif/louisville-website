@@ -1,5 +1,5 @@
 h1 {
-  color: #3d4543;
+  color: #3f4241;
  text-align: center;
  font-size: xx-large;
  font-style: oblique;
@@ -12,6 +12,7 @@ h2 {
   font-style: oblique;
 
 }
+
 
  /* Header Styling */
 header {
@@ -38,7 +39,7 @@ header {
    width: 100px;
    text-align: left;
    height: auto;
-  color: rgb(73, 36, 36);
+  color: rgb(99, 95, 95);
 }
 
 
@@ -51,7 +52,7 @@ header {
   
   /* Style tab links */
     .tablink {
-     background-color: #555;
+     background-color: rgb(124, 110, 110);
      color: white;
      float: left;
      border: none;
@@ -73,14 +74,14 @@ header {
         }
 
    .grid-item {
-      background-color: rgb(189, 185, 185);
-      border: 5px rgb(136, 132, 132);
+      background-color: rgb(243, 237, 237);
+      border: 5px white;
      
      }
 
 
    .tablink:hover {
-     background-color: #777;
+     background-color: rgb(87, 80, 80);
    }
   
   
@@ -137,7 +138,7 @@ footer {
      flex-direction: row;
   }
   p:nth-child(3) {
-    background: rgb(136, 115, 115);
+    background: rgb(168, 142, 142);
   }
 }
 

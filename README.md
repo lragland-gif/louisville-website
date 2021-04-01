@@ -8,6 +8,7 @@ It shows you a map for downtown louisville as well.  I provide a selection bar w
     1. Flexbox used to organize content areas based on mobile or desktop views.
     2. Navigation menu that expands and collapses properly for desktop/mobile sizes.
     3. Created a form with javascript that checkbox when checked allows you to enter name/email.  show/hide feature when checked. 
+    4. JavaScript setup for Tab content with hoover. 
 Other Requirements:
 
 
