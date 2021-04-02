@@ -10,9 +10,13 @@ h2 {
   text-align:center;
   font-size: medium; 
   font-style: oblique;
-
 }
 
+  p {
+   margin: 0;
+    text-indent: 9px;
+    font-style: oblique;
+  }
 
  /* Header Styling */
 header {
@@ -38,7 +42,6 @@ header {
   justify-content: center;
   background-color:rgb(243, 237, 237);
    padding: 20px;
-   width: 100px;
    text-align: left;
    height: auto;
   color: rgb(99, 95, 95);
